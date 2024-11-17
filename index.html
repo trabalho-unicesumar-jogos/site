@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Filhos da Luz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="navbar">
+    <nav>
+      <a href="#game">Sobre</a>
+      <a href="#images">Fotos</a>
+      <a href="#roadmap">Mapa</a>
+      <a href="#history">Historia</a>
+      <a href="#trailer">Trailer</a>
+    </nav>
+    <a href="https://store.steampowered.com/app/289650/Assassins_Creed_Unity/" target="_blank"
+      class="explore-btn">Explore mais</a>
+  </header>
+
+  <section class="game">
+    <h1>Assassin's Creed: Unity</h1>
+    <section class="game-description">
+      <div class="container">
+        <p>
+          Paris, 1789 – A Revolução Francesa transforma a cidade magnífica de outrora em um lugar de terror e caos. Suas
+          ruas de
+          pedras são inundadas pelo sangue dos plebeus que ousaram se revoltar contra a aristocracia opressora.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <section class="photos" id="images">
+    <div class="container">
+      <h2>Fotos</h2>
+      <div class="slideshow">
+        <div class="arrows">
+          <button id="switch" class="prev" onclick="prevSlide()">&#10094;</button>
+          <button id="switch" class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="slides">
+          <img src="assets/ac1.jpg" alt="Imagem 1" class="slideImage">
+          <img src="assets/ac4.jpg" alt="Imagem 4" class="slideImage">
+          <img src="assets/ac2.jpg" alt="Imagem 2" class="slideImage">
+          <img src="assets/ac3.jpg" alt="Imagem 3" class="slideImage">
+        </div>
+        <div class="navigation">
+          <label for="slide1" class="nav-btn"></label>
+          <label for="slide2" class="nav-btn"></label>
+          <label for="slide3" class="nav-btn"></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map" id="roadmap">
+    <div class="container">
+      <h2>Mapa</h2>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no"
+        src="https://maps.google.com/maps?width=100%25&amp;height=900&amp;hl=en&amp;q=Paris%20France+(France)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    </div>
+    </div>
+  </section>
+
+  <section class="history" id="history">
+    <div class="container">
+      <h2>Historia</h2>
+      <div class="history-container">
+        <img src="assets/arno.jpg" alt="Arno Victor" class="history-image">
+        <div class="history-text">
+          <p>Arno Victor</p>
+          <p>
+            O protagonista do jogo é Arno Victor Dorian, um francês nascido em Versalles, filho de um pai Assassino.
+            Depois
+            do seu pai ser assassinado, Arno é adotado sem saber que a sua família adotiva tem uma posição muito
+            importante
+            na Ordem dos Templários, e que o seu padrasto é um Grande Mestre da organização.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gameplay" id="trailer">
+    <div class="container">
+      <h2>Trailer</h2>
+      <div class="gameplay-container">
+        <iframe width="100%" height="750" src="https://www.youtube.com/embed/xzCEdSKMkdU?si=u413lIB0e9dwqAD6"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="purchase" id="purchase">
+    <div class="container">
+      <h2>Comprar Jogo</h2>
+      <form action="#" method="POST" class="purchase-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+
+        <label for="platform">Plataforma</label>
+        <select id="platform" name="platform" required>
+          <option value="PC">PC</option>
+          <option value="XBOX">XBOX</option>
+          <option value="PLAYSTATION">PLAYSTATION</option>
+        </select>
+
+        <label for="quantity">Quantidade de horas jogadas</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Quantidade" required min="1">
+
+        <label for="address">Comentario</label>
+        <textarea id="Expectativas" placeholder="" required></textarea>
+
+        <button type="submit" class="explore-btn">Comprar Agora</button>
+      </form>
+    </div>
+  </section>
+
+</body>
+
+</html>
